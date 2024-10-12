@@ -1,0 +1,33 @@
+body {
+	@apply text-black bg-transparent;
+}
+
+.dark body {
+	@apply text-white bg-transparent;
+}
+
+/* 自定义滚动条样式 */
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background: rgba(207, 207, 217, 0.6);
+	border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(207, 207, 217);
+}
+
+/* 添加暗黑模式下的滚动条样式 */
+.dark ::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+	background: rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,74 @@
+/* 自定义 video.js 皮肤 */
+.vjs-custom-skin {
+	/* 播放器背景 */
+	--vjs-theme-bg: rgba(0, 0, 0, 0.8);
+
+	/* 控制栏背景 */
+	--vjs-theme-control-bar: rgba(0, 0, 0, 0.3);
+
+	/* 主要颜色 */
+	--vjs-theme-primary: #00b3ff;
+
+	/* 次要颜色 */
+	--vjs-theme-secondary: #fff;
+}
+
+/* 播放器容器 */
+.video-js.vjs-custom-skin {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* 控制栏 */
+.vjs-custom-skin .vjs-control-bar {
+	background-color: var(--vjs-theme-control-bar);
+	height: 4em;
+}
+
+/* 按钮 */
+.vjs-custom-skin .vjs-button > .vjs-icon-placeholder:before {
+	color: var(--vjs-theme-secondary);
+}
+
+/* 进度条 */
+.vjs-custom-skin .vjs-play-progress {
+	background-color: var(--vjs-theme-primary);
+}
+
+.vjs-custom-skin .vjs-slider {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* 音量控制 */
+.vjs-custom-skin .vjs-volume-level {
+	background-color: var(--vjs-theme-primary);
+}
+
+/* 时间显示 */
+.vjs-custom-skin .vjs-current-time,
+.vjs-custom-skin .vjs-time-divider,
+.vjs-custom-skin .vjs-duration {
+	color: var(--vjs-theme-secondary);
+}
+
+/* 全屏按钮 */
+.vjs-custom-skin .vjs-fullscreen-control {
+	margin-right: 0.5em;
+}
+
+/* 大播放按钮 */
+.vjs-custom-skin .vjs-big-play-button {
+	background-color: rgba(0, 0, 0, 0.45);
+	border: none;
+	border-radius: 50%;
+	height: 2em;
+	width: 2em;
+	line-height: 2em;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.vjs-custom-skin:hover .vjs-big-play-button,
+.vjs-custom-skin .vjs-big-play-button:focus {
+	background-color: var(--vjs-theme-primary);
+}

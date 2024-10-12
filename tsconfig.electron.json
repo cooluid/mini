@@ -1,0 +1,30 @@
+{
+	"compilerOptions": {
+		"target": "ES2021",
+		"module": "CommonJS",
+		"lib": ["ES2021", "DOM"],
+		"outDir": "dist_electron",
+		"rootDir": "electron",
+		"strict": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"downlevelIteration": true,
+
+		"baseUrl": ".",
+		"paths": {
+			"*": ["node_modules/*"],
+			"@electron/*": ["electron/*"]
+		},
+		"typeRoots": ["./node_modules/@types", "./electron/types"],
+		"types": ["node"]
+		// "sourceMap": true
+	},
+	"include": ["electron/**/*"],
+	"exclude": ["node_modules", "**/*.spec.ts"]
+}
